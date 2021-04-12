@@ -1,10 +1,11 @@
+//Mauricio Colque Morals - CCOMP2-1 - Tres en Raya 
 #include<iostream>
 
 
 char x = '1'; // Para incrementarlo y llenar la matriz
 
 
-//Funci髇 que inicializa la matriz con los 9 alores
+//Funci贸n que inicializa la matriz con los 9 alores
 void inicializar(char matriz[3][3])
 {
 	for(int i = 0; i<3; i++)
@@ -18,7 +19,7 @@ void inicializar(char matriz[3][3])
 	}	
 }
 
-//Funci髇 que recoje la opci髇 de 'x' u 'o'
+//Funci贸n que recoje la opci贸n de 'x' u 'o'
 char escojaX_u_O()
 {
 	while(true){ //Bucle que funciona hasta que se ingrese las opciones correctas
@@ -32,7 +33,7 @@ char escojaX_u_O()
 		else
 		{
 			std::cout<<"Usted ha elegido ser " << opcion << "\n";
-			return opcion; //Se retorna la opci髇 escogida
+			return opcion; //Se retorna la opci贸n escogida
 		}
 	}
 	
@@ -40,7 +41,7 @@ char escojaX_u_O()
 }
 
 
-//Funci髇 que crea un tablero impreso en la pantalla
+//Funci贸n que crea un tablero impreso en la pantalla
 void mostrar_tablero(char matriz[3][3]){
 	
 	for(int i = 0; i < 3; i++)
@@ -65,7 +66,7 @@ void mostrar_tablero(char matriz[3][3]){
 }
 
 
-//Funci髇 que genera un tablero con la opci髇 en la posici髇 escogida
+//Funci贸n que genera un tablero con la opci贸n en la posici贸n escogida
 void colocar(char matriz[3][3], int num, char opcion)
 {
 	for(int i = 0 ; i < 3; i ++)
@@ -80,14 +81,14 @@ void colocar(char matriz[3][3], int num, char opcion)
 		}
 	}
 	
-	mostrar_tablero(matriz); //Llama a la funci髇 de crear tablero y pasa la matriz modificada
+	mostrar_tablero(matriz); //Llama a la funci贸n de crear tablero y pasa la matriz modificada
 }
 
 int main(){
 	
 	char matriz[3][3];
 	inicializar(matriz);
-	char opcion = escojaX_u_O(); //guardando la opci髇
+	char opcion = escojaX_u_O(); //guardando la opci贸n
 	
 	int posicion;
 	std:: cout << "Por favor, introduzca una posicion del tablero: ";
